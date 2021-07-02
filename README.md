@@ -1,2 +1,5 @@
 # apollo-opentelemetry
-open-telemetry config for Apollo Server and Apollo Gateway
+Open Telemetry config for Apollo Server and Apollo Gateway.
+
+## Learn More
+[Apollo Federation Open Telemetry Docs](https://www.apollographql.com/docs/federation/opentelemetry/)
