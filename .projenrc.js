@@ -1,13 +1,28 @@
-const { TypeScriptProject } = require('projen');
+const { TypeScriptProject, Publisher } = require('projen');
 const project = new TypeScriptProject({
+  authorName: 'Phil Prasek',
+  authorAddress: 'prasek@gmail.com',
+  license: 'MIT',
+  packageName: 'supergraph-demo-opentelemetry',
+  description: 'Open Telemetry instrumentation for Apollo Server and Apollo Gateway',
+  repository: 'https://github.com/prasek/supergraph-demo-opentelemetry.git',
+  name: 'supergraph-demo-opentelemetry',
+  projectType: 'library',
   defaultReleaseBranch: 'main',
-  name: 'apollo-opentelemetry',
-
-  // deps: [],                          /* Runtime dependencies of this module. */
-  // description: undefined,            /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],                       /* Build dependencies for this module. */
-  // packageName: undefined,            /* The "name" in package.json. */
-  // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
-  // release: undefined,                /* Add release management to this project. */
+  releaseToNpm: true,
+  deps: [
+    '@opentelemetry/api',
+    '@opentelemetry/core@0.22',
+    '@opentelemetry/exporter-collector@0.22',
+    '@opentelemetry/exporter-zipkin@0.22',
+    '@opentelemetry/instrumentation@0.22',
+    '@opentelemetry/instrumentation-http@0.22',
+    '@opentelemetry/instrumentation-express@0.22',
+    '@opentelemetry/instrumentation-graphql@0.22',
+    '@opentelemetry/node@0.22',
+    '@opentelemetry/resources@0.22',
+    '@opentelemetry/tracing@0.22',
+  ],
 });
+
 project.synth();

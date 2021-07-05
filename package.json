@@ -1,5 +1,10 @@
 {
-  "name": "apollo-opentelemetry",
+  "name": "supergraph-demo-opentelemetry",
+  "description": "Open Telemetry instrumentation for Apollo Server and Apollo Gateway",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prasek/supergraph-demo-opentelemetry.git"
+  },
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "npx projen compile",
@@ -19,6 +24,10 @@
     "projen": "npx projen",
     "start": "npx projen start"
   },
+  "author": {
+    "name": "Phil Prasek",
+    "organization": false
+  },
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^10.17.0",
@@ -37,9 +46,22 @@
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5"
   },
+  "dependencies": {
+    "@opentelemetry/api": "^1.0.1",
+    "@opentelemetry/core": "0.22",
+    "@opentelemetry/exporter-collector": "0.22",
+    "@opentelemetry/exporter-zipkin": "0.22",
+    "@opentelemetry/instrumentation": "0.22",
+    "@opentelemetry/instrumentation-express": "0.22",
+    "@opentelemetry/instrumentation-graphql": "0.22",
+    "@opentelemetry/instrumentation-http": "0.22",
+    "@opentelemetry/node": "0.22",
+    "@opentelemetry/resources": "0.22",
+    "@opentelemetry/tracing": "0.22"
+  },
   "bundledDependencies": [],
   "main": "lib/index.js",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "version": "0.0.0",
   "jest": {
     "testMatch": [
