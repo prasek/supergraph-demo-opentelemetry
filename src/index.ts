@@ -1,6 +1,6 @@
 import { diag, DiagConsoleLogger, DiagLogLevel } from '@opentelemetry/api';
 
-import { CollectorTraceExporter } from '@opentelemetry/exporter-collector';
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
 import { ZipkinExporter } from '@opentelemetry/exporter-zipkin';
 import {
   Instrumentation,
@@ -10,9 +10,9 @@ import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express';
 
 import { GraphQLInstrumentation } from '@opentelemetry/instrumentation-graphql';
 import { HttpInstrumentation } from '@opentelemetry/instrumentation-http';
-import { NodeTracerProvider } from '@opentelemetry/node';
 import { Resource } from '@opentelemetry/resources';
-import { BatchSpanProcessor, ConsoleSpanExporter, SimpleSpanProcessor } from '@opentelemetry/tracing';
+import { BatchSpanProcessor, ConsoleSpanExporter, SimpleSpanProcessor } from '@opentelemetry/sdk-trace-base';
+import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
 
 
 enum GraphNodeType {
@@ -114,8 +114,8 @@ export class ApolloOpenTelemetry {
       case ExporterType.Collector:
         const collectorPort = exporter?.port ?? '55681';
 
-        const collectorTraceExporter = new CollectorTraceExporter({
-          url: `http://${host}:${collectorPort}/v1/trace`,
+        const collectorTraceExporter = new OTLPTraceExporter({
+          url: `http://${host}:${collectorPort}/v1/traces`,
         });
         provider.addSpanProcessor(
           new BatchSpanProcessor(collectorTraceExporter, {
