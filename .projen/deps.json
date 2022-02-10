@@ -70,56 +70,57 @@
     },
     {
       "name": "@opentelemetry/api",
+      "version": "1.0",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/core",
-      "version": "0.22",
+      "version": "1.0",
       "type": "runtime"
     },
     {
-      "name": "@opentelemetry/exporter-collector",
-      "version": "0.22",
+      "name": "@opentelemetry/exporter-trace-otlp-http",
+      "version": "0.27",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/exporter-zipkin",
-      "version": "0.22",
+      "version": "1.0",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-express",
-      "version": "0.22",
+      "version": "0.28",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-graphql",
-      "version": "0.22",
+      "version": "0.27",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-http",
-      "version": "0.22",
+      "version": "0.27",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation",
-      "version": "0.22",
-      "type": "runtime"
-    },
-    {
-      "name": "@opentelemetry/node",
-      "version": "0.22",
+      "version": "0.27",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/resources",
-      "version": "0.22",
+      "version": "1.0",
       "type": "runtime"
     },
     {
-      "name": "@opentelemetry/tracing",
-      "version": "0.22",
+      "name": "@opentelemetry/sdk-trace-base",
+      "version": "1.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@opentelemetry/sdk-trace-node",
+      "version": "1.0",
       "type": "runtime"
     }
   ],
