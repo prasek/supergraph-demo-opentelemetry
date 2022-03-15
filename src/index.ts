@@ -112,7 +112,7 @@ export class ApolloOpenTelemetry {
         break;
 
       case ExporterType.Collector:
-        const collectorPort = exporter?.port ?? '55681';
+        const collectorPort = exporter?.port ?? '4318';
 
         const collectorTraceExporter = new OTLPTraceExporter({
           url: `http://${host}:${collectorPort}/v1/traces`,
