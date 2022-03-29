@@ -17,7 +17,7 @@ const project = new TypeScriptProject({
     '@opentelemetry/exporter-zipkin@1.0',
     '@opentelemetry/instrumentation@0.27',
     '@opentelemetry/instrumentation-http@0.27',
-    '@opentelemetry/instrumentation-express@0.28',
+    '@opentelemetry/instrumentation-express@0.27',
     '@opentelemetry/instrumentation-graphql@0.27',
     '@opentelemetry/resources@1.0',
     '@opentelemetry/sdk-trace-base@1.0',
