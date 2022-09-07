@@ -6,19 +6,17 @@
     },
     {
       "name": "@types/node",
-      "version": "^10.17.0",
+      "version": "^14",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
+      "version": "^5",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/parser",
-      "type": "build"
-    },
-    {
-      "name": "eslint",
+      "version": "^5",
       "type": "build"
     },
     {
@@ -34,12 +32,17 @@
       "type": "build"
     },
     {
+      "name": "eslint",
+      "version": "^8",
+      "type": "build"
+    },
+    {
       "name": "jest",
       "type": "build"
     },
     {
       "name": "jest-junit",
-      "version": "^12",
+      "version": "^13",
       "type": "build"
     },
     {
@@ -48,7 +51,7 @@
     },
     {
       "name": "npm-check-updates",
-      "version": "^11",
+      "version": "^15",
       "type": "build"
     },
     {
@@ -70,57 +73,57 @@
     },
     {
       "name": "@opentelemetry/api",
-      "version": "1.0",
+      "version": "1.2",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/core",
-      "version": "1.0",
+      "version": "1.6",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/exporter-trace-otlp-http",
-      "version": "0.27",
+      "version": "0.32",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/exporter-zipkin",
-      "version": "1.0",
+      "version": "1.6",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-express",
-      "version": "0.27",
+      "version": "0.31",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-graphql",
-      "version": "0.27",
+      "version": "0.30",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation-http",
-      "version": "0.27",
+      "version": "0.32",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/instrumentation",
-      "version": "0.27",
+      "version": "0.32",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/resources",
-      "version": "1.0",
+      "version": "1.6",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/sdk-trace-base",
-      "version": "1.0",
+      "version": "1.6",
       "type": "runtime"
     },
     {
       "name": "@opentelemetry/sdk-trace-node",
-      "version": "1.0",
+      "version": "1.6",
       "type": "runtime"
     }
   ],

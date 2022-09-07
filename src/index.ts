@@ -41,7 +41,7 @@ export interface ApolloOpenTelemetryProps {
 }
 
 export class ApolloOpenTelemetry {
-  private props: ApolloOpenTelemetryProps
+  private props: ApolloOpenTelemetryProps;
 
   public constructor(props: ApolloOpenTelemetryProps) {
     this.props = props;
