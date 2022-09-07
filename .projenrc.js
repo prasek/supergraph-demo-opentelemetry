@@ -1,5 +1,5 @@
-const { TypeScriptProject, Publisher } = require('projen');
-const project = new TypeScriptProject({
+const { typescript } = require('projen');
+const project = new typescript.TypeScriptProject({
   authorName: 'Phil Prasek',
   authorAddress: 'prasek@gmail.com',
   license: 'MIT',
@@ -11,17 +11,17 @@ const project = new TypeScriptProject({
   defaultReleaseBranch: 'main',
   releaseToNpm: true,
   deps: [
-    '@opentelemetry/api@1.0',
-    '@opentelemetry/core@1.0',
-    '@opentelemetry/exporter-trace-otlp-http@0.27',
-    '@opentelemetry/exporter-zipkin@1.0',
-    '@opentelemetry/instrumentation@0.27',
-    '@opentelemetry/instrumentation-http@0.27',
-    '@opentelemetry/instrumentation-express@0.27',
-    '@opentelemetry/instrumentation-graphql@0.27',
-    '@opentelemetry/resources@1.0',
-    '@opentelemetry/sdk-trace-base@1.0',
-    '@opentelemetry/sdk-trace-node@1.0',
+    '@opentelemetry/api@1.2',
+    '@opentelemetry/core@1.6',
+    '@opentelemetry/exporter-trace-otlp-http@0.32',
+    '@opentelemetry/exporter-zipkin@1.6',
+    '@opentelemetry/instrumentation@0.32',
+    '@opentelemetry/instrumentation-http@0.32',
+    '@opentelemetry/instrumentation-express@0.31',
+    '@opentelemetry/instrumentation-graphql@0.30',
+    '@opentelemetry/resources@1.6',
+    '@opentelemetry/sdk-trace-base@1.6',
+    '@opentelemetry/sdk-trace-node@1.6',
   ],
 });
 
